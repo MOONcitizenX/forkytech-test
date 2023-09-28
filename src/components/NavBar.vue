@@ -126,6 +126,11 @@ $side-padding: 15px;
 .location-bottom {
   display: none;
 
+  & > img {
+    width: 15px;
+    height: 20px;
+  }
+
   @include md {
     display: flex;
     margin-left: $side-padding;
@@ -134,6 +139,8 @@ $side-padding: 15px;
     padding: 19px 0;
 
     background-color: transparent;
+
+    font-size: 16px;
   }
 }
 </style>

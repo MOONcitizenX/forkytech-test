@@ -4,7 +4,7 @@ import location from '@/assets/icons/location.svg'
 
 <template>
   <div class="location">
-    <img :src="location" alt="Location" />
+    <img :src="location" alt="Location" width="12" height="18" />
     <p>Москва и область</p>
   </div>
 </template>
@@ -17,5 +17,12 @@ import location from '@/assets/icons/location.svg'
   justify-content: flex-start;
   align-items: center;
   gap: 14px;
+
+  @include md {
+    & > img {
+      width: 15px;
+      height: 20px;
+    }
+  }
 }
 </style>
