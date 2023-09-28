@@ -62,6 +62,15 @@ watch(
     padding: 11px 0 11px;
   }
 }
+
+.logo {
+  transition: transform $trans;
+  &:hover,
+  :focus:not(:active) {
+    position: relative;
+    transform: scale(1.1);
+  }
+}
 .header-location {
   @include md {
     display: none;

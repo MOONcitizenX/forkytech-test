@@ -107,7 +107,8 @@ $side-padding: 15px;
     }
   }
 
-  &:hover {
+  & &:hover,
+  :focus:not(:active) {
     color: $dark;
   }
   & .active {

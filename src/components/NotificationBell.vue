@@ -38,7 +38,8 @@ const burgerStore = useBurgerStore()
     opacity: 0;
   }
 
-  &:hover {
+  & &:hover,
+  :focus:not(:active) {
     transform: scale(1.1);
   }
 

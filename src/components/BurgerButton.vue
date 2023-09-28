@@ -41,7 +41,8 @@ const burgerStore = useBurgerStore()
     align-items: center;
   }
 
-  &:hover {
+  &:hover,
+  :focus:not(:active) {
     transform: scale(1.1);
   }
 }
