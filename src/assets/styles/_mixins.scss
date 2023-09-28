@@ -1,0 +1,26 @@
+// Small devices
+@mixin sm {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+// Medium devices
+@mixin md {
+  @media (max-width: 968px) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (max-width: 1140px) {
+    @content;
+  }
+}
+
+// Custom mixin for responsive media screen
+@mixin responsive($width) {
+  @media (max-width: #{$width}px) {
+    @content;
+  }
+}
