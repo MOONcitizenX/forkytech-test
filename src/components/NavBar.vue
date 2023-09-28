@@ -97,6 +97,9 @@ $side-padding: 15px;
     padding: 14px 0;
     border-bottom: 2px solid transparent;
 
+    font-size: 14px;
+    font-weight: 400;
+
     transition:
       border-bottom $trans,
       color $trans;
@@ -104,6 +107,9 @@ $side-padding: 15px;
     @include md {
       padding-bottom: 8px;
       width: 100%;
+
+      font-size: 16px;
+      font-weight: 700;
     }
   }
 
