@@ -42,12 +42,16 @@ $side-padding: 15px;
     flex-direction: column;
     justify-content: space-between;
 
-    transition: transform 0.4s ease-out;
+    transition:
+      transform 0.4s ease-out,
+      opacity 0.4s ease-out;
 
     transform: translateX(-100%);
+    opacity: 0;
   }
   &.open {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 .navigation {
